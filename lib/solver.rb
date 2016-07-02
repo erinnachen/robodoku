@@ -1,3 +1,11 @@
+require_relative './board'
 class Solver
-  # your excellent code here
+  attr_reader :board
+  def initialize(puzzle)
+    @board = Board.new(puzzle)
+  end
+
+  def solve
+    board.to_s
+  end
 end
